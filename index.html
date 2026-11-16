@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards Interativos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <h1>Flashcards Interativos</h1>
+      <nav aria-label="Navegação principal">
+        <ul class="cabecalho-nav">
+          <li><a class="cabecalho-link" href="#cartoes">Cartões</a></li>
+          <li><a class="cabecalho-link" href="https://www.alura.com.br" target="_blank" rel="noopener noreferrer">Alura</a></li>
+          <li><a class="cabecalho-link" href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="tag">Estudos • CSS • Interatividade</p>
+      <h2>Aprenda com cartões que respondem a você</h2>
+      <p>Passe o mouse, navegue com <kbd>Tab</kbd> ou clique/toque para virar os cartões e revelar as respostas.</p>
+    </section>
+
+    <section id="cartoes" class="container secao-cartoes" aria-label="Lista de flashcards">
+      <article class="cartao" tabindex="0" aria-label="Flashcard: O que é :hover? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">Pseudoclasse</span>
+            <h3>O que é <code>:hover</code>?</h3>
+            <p class="dica">Passe o mouse ou foque para virar</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Aplica estilos quando o ponteiro está sobre o elemento. Ótimo para indicar interatividade no desktop.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao" tabindex="0" aria-label="Flashcard: Para que serve :focus? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">Acessibilidade</span>
+            <h3>Para que serve <code>:focus</code>?</h3>
+            <p class="dica">Navegue com Tab</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Destaca o elemento que recebeu foco (ex.: via teclado), mostrando onde a pessoa está na página.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao" tabindex="0" aria-label="Flashcard: Quando :active é aplicado? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">Feedback</span>
+            <h3>Quando <code>:active</code> é aplicado?</h3>
+            <p class="dica">Clique e segure</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Durante o momento do clique/toque. Dá um retorno visual imediato confirmando a ação.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao" tabindex="0" aria-label="Flashcard: O que faz :focus-within? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">Contêiner</span>
+            <h3>O que faz <code>:focus-within</code>?</h3>
+            <p class="dica">Foque algo dentro do bloco</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Aplica estilos ao contêiner quando qualquer elemento filho recebe foco, criando respostas coerentes.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao" tabindex="0" aria-label="Flashcard: Qual a função de :visited? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">Navegação</span>
+            <h3>Qual a função de <code>:visited</code>?</h3>
+            <p class="dica">Veja nos links do topo</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Estiliza links já abertos, ajudando a pessoa a saber por onde já passou em uma página.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="cartao" tabindex="0" aria-label="Flashcard: Por que feedback visual importa? Toque ou pressione Enter para virar">
+        <div class="cartao-interno">
+          <div class="cartao-face cartao-frente">
+            <span class="cartao-categoria">UX</span>
+            <h3>Por que feedback visual importa?</h3>
+            <p class="dica">Interaja para descobrir</p>
+          </div>
+          <div class="cartao-face cartao-verso">
+            <h3>Resposta</h3>
+            <p>Pequenas mudanças de estado comunicam o que é clicável, onde está o foco e confirmam ações.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="sobre" class="container sobre">
+      <h2>Sobre</h2>
+      <p>Projeto de flashcards interativos criado para praticar pseudoclasses CSS e microinterações acessíveis.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Feito para estudos na Alura • 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
